@@ -1,0 +1,7 @@
+## Interface: 40300
+## Title: gTooltipRoles
+## Author: g0st
+## Version: 0.0
+## Notes: Displays a players LFD or LFR role on the tooltip
+
+core.lua
