@@ -3,6 +3,7 @@
 local COLOR_TANK = "E06D1B";
 local COLOR_HEAL = "1B70E0";
 local COLOR_DPS  = "E01B35";
+local COLOR_NONE = "B5B5B5";
 
 ------------------------------ CONFIG ------------------------------
 
@@ -13,7 +14,7 @@ local function GetLFDRole(unit)
 	local role = UnitGroupRolesAssigned(unit);
 	
 	if(role == "NONE") then
-		return "none";
+		return "|cFF" .. COLOR_NONE .. "Not Selected|r";
 	elseif (role == "TANK") then
 		return "|cFF" .. COLOR_TANK .. "Tank|r";
 	elseif(role == "HEALER") then
