@@ -2,6 +2,6 @@
 ## Title: gTooltipRoles
 ## Author: g0st
 ## Version: 1.1.0
-## Notes: Displays a players LFD or LFR role on the tooltip
+## Notes: Displays a players LFD or LFR role on the tooltip.
 
 core.lua
