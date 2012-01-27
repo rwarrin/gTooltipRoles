@@ -26,10 +26,7 @@ end
 
 GameTooltip:HookScript("OnTooltipSetUnit", function(self, ...)
 	local name, unit = GameTooltip:GetUnit();
-	if(unit and UnitIsPlayer(unit)) then
-		local role = GetLFDRole(unit);
-		if(role ~= "none") then
-			GameTooltip:AddLine("Role: " .. role);
-		end
+	if(unit and UnitIsPlayer(unit) and (UnitInParty(unit) or UnitInRaid(unit))) then
+			GameTooltip:AddLine("Role: " .. GetLFDRole(unit));
 	end
 end);
